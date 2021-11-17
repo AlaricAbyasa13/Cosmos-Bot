@@ -1,0 +1,15 @@
+{
+    "name": "Cosmos",
+    "version": "0.0.1",
+    "description": "A cool discord bot created by Aeae with aoijs",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "Aeae",
+    "license": "ISC",
+    "dependencies": {
+        "aoi.js": "^5.0.3",
+        "express": "^4.17.1"
+    }
+}
