@@ -11,8 +11,9 @@ $color[1;$getvar[Color]]
 $title[1;Cosmos Commands List]
 $description[1;**CLICK THE SELECT MENU FOR COMMANDS**
 $customemoji[Lamp;908336280654458900]You can also do \`$getservervar[Prefix]Help [command]\`]
-$addfield[1;Latest Update - 17/11/2021;
+$addfield[1;Latest Update - 18/11/2021;
 $customemoji[Orange;908336280654458900] \`Evaluate command created\`
+$customemoji[Orange;908336280654458900] \`ChangeALog command created\`
 $customemoji[Orange;908336280654458900] \`Help command created\`
 $customemoji[Orange;908336280654458900] \`Ping command created\`
 $customemoji[Orange;908336280654458900] \`About command created\`
@@ -115,7 +116,7 @@ $onlyIf[$interactionData[values[0]]==4;]
  prototype : 'selectMenu',
  code : `
 $djsEval[console.log(d.data.interaction.values)]
-$interactionUpdate[;{newEmbed:{footer:Cosmos v$getvar[Version]}{author:Developer Commands:$authorAvatar}{description:\`Evaluate\`}{color:$getvar[Color]}}; {actionRow:{selectMenu:help_$authorID:📚 Select a category!:1:1:false:{selectMenuOptions:Utility:0:Commands for information:false:<a:Gears:908353451090665512>}{selectMenuOptions:Fun:1:Commands that make you happy:false:<a:Game:908981882077720596>}{selectMenuOptions:Economy:2:Play economy commands:false:<a:Money:908983193582047232>}{selectMenuOptions:Moderation:3:Commands to moderate server:false:<a:Hammer:908533879315513345>}{selectMenuOptions:Other:4:Other usefull commands:false:<a:Loading:909670332724547644>}{selectMenuOptions:Developer:5:Developer commands:false:<a:Developer:910446141173272617>}}};]
+$interactionUpdate[;{newEmbed:{footer:Cosmos v$getvar[Version]}{author:Developer Commands:$authorAvatar}{description:\`Evaluate, ChangeALog\`}{color:$getvar[Color]}}; {actionRow:{selectMenu:help_$authorID:📚 Select a category!:1:1:false:{selectMenuOptions:Utility:0:Commands for information:false:<a:Gears:908353451090665512>}{selectMenuOptions:Fun:1:Commands that make you happy:false:<a:Game:908981882077720596>}{selectMenuOptions:Economy:2:Play economy commands:false:<a:Money:908983193582047232>}{selectMenuOptions:Moderation:3:Commands to moderate server:false:<a:Hammer:908533879315513345>}{selectMenuOptions:Other:4:Other usefull commands:false:<a:Loading:909670332724547644>}{selectMenuOptions:Developer:5:Developer commands:false:<a:Developer:910446141173272617>}}};]
     $onlyIf[$interactionData[customId]==help_$interactionData[author.id];]
     $onlyif[$advancedTextSplit[$interactionData[customId];_;2]==$interactionData[author.id];{
     "content" : " ",
